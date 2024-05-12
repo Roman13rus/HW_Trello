@@ -1,0 +1,12 @@
+environment:
+  nodejs_version: "18" # окружение
+branches:
+  only:
+    - main # ветка git
+cache: node_modules # кеширование
+install:
+  - yarn # команда установки зависимостей
+build: off
+build_script:
+  - yarn run build # скрипт сборки
+test_script:
